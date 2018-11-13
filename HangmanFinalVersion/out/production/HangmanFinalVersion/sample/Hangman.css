@@ -1,0 +1,54 @@
+.root {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-background-color: #542331 ;
+}
+#topBox{
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-background-color: #7D3549;
+}
+
+.hangman-board {
+    -fx-background-color: #eeeeee ;
+    -fx-padding: 15px ;
+    -fx-alignment: center ;
+}
+
+.hangman-board > .board-grid {
+    -fx-background-color: white ;
+    -fx-border-color: transparent ;
+}
+
+.hangman-board .label:disabled {
+    -fx-opacity: 1.0 ;
+}
+
+.hangman-board > .board-grid > .label {
+    -fx-font-size: 128pt ;
+}
+
+.status {
+    -fx-font-size: 24pt ;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px 5px 20px ;
+}
+
+#Player {
+    -fx-background-color: #eeeeee ;
+    -fx-font-size: 20pt ;
+    -fx-text-fill: black ;
+    -fx-padding: 10px 20px 5px 20px ;
+}
+
+#difficultyLabel {
+    -fx-font-size: 14pt ;
+    -fx-text-fill: white ;
+    -fx-padding: 10px 20px 5px 20px ;
+}
+
+#hintButton{
+    -jfx-button-type: FLAT;
+    -fx-background-color: goldenrod;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+
