@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+
+    <top>
+        <VBox>
+            <MenuBar fx:id="menu">
+                <Menu text="Game">
+                    <MenuItem text="New Game" onAction="#newHangman"/>
+                    <MenuItem text="Quit" onAction="#quit"/>
+                </Menu>
+            </MenuBar>
+            <GridPane>
+                <Label fx:id="difficultyLabel" GridPane.columnIndex="0">
+                </Label>
+                <Label fx:id="ScoreLabel" GridPane.columnIndex="1">
+                </Label>
+            </GridPane>
+            <TilePane fx:id="Player">
+            <Label fx:id="PlayerLabel">
+            </Label>
+            </TilePane>
+        </VBox>
+    </top>
+
+    <center>
+        <Pane fx:id="board">
+            <styleClass>
+                <String fx:value="hangman-board"/>
+            </styleClass>
+        </Pane>
+    </center>
+    <bottom>
+        <VBox>
+            <VBox fx:id="topBox">
+                <styleClass>
+                    <String fx:value="topBox"/>
+                </styleClass>
+                <Label fx:id="NumberOfBadGuesses">
+                    <styleClass>
+                        <String fx:value="status"/>
+                    </styleClass>
+                </Label>
+                <Label fx:id="MissedLettersLabel">
+                    <styleClass>
+                        <String fx:value="status"/>
+                    </styleClass>
+                </Label>
+            </VBox>
+            <Label fx:id="statusLabel">
+                <styleClass>
+                    <String fx:value="status"/>
+                </styleClass>
+            </Label>
+            <GridPane>
+                <Label fx:id="enterALetterLabel" GridPane.columnIndex="0">
+                    <styleClass>
+                        <String fx:value="status"/>
+                    </styleClass>
+                </Label>
+                <TextField fx:id="textField" GridPane.columnIndex="1">
+                </TextField>
+                <Button fx:id="hintButton" GridPane.columnIndex="2">
+                </Button>
+            </GridPane>
+        </VBox>
+    </bottom>
+</BorderPane>
