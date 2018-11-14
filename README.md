@@ -2,7 +2,7 @@
 Hangman Project for Comp 585
 
 How to build/run your application: 
-HangmanFinalVersion, First create a new project in Intellij, then create a package called sample within src. Next, copy and paste the Game.java, GameController.java, Hangman.java, Hangman.css, and Hangman.fxml into sample. Next, place words.txt into HangmanFinalVersion. From here you can run 'Hangman.main()' to launch the game.
+HangmanFinalVersion, First create a new project in Intellij, then create a package called sample within src. Next, copy and paste Game.java, GameController.java, Hangman.java, Hangman.css, and Hangman.fxml into sample. Next, place words.txt into HangmanFinalVersion. From here you can run 'Hangman.main()' to launch the game.
 
 Platform (Windows/Linux/Mac), version?:
 Works with Windows and Mac
