@@ -1,6 +1,6 @@
 # comp585hangman
 Hangman Project for Comp 585
-How to build/run your application
+How to build/run your application: Hangman
 
 Platform (Windows/Linux/Mac), version?
 
